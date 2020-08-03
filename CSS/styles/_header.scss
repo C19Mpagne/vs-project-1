@@ -1,0 +1,48 @@
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: fit-content inline;
+    background-color: #333;
+    color: #fff;
+    top: 0px;
+}
+#icon {
+    padding-left: 160px;
+    float: left;
+    box-sizing: border-box;
+}
+#mainNav {
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 160px;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        display: inline;
+        margin: 100% 20px;
+    }
+    a {
+        text-decoration: none;
+        color: #aaa;
+        &:hover {
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    #icon {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+    header {
+        position: initial;
+    }
+    #mainNav {
+        padding: 0;
+        text-align: center;
+    }
+}

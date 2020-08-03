@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="html,css,xml,">
+    <meta name="author" content="Alexey Kovzel">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .background {
+            background-color: rgb(43, 46, 226);
+            color: white;
+        }
+    </style>
+    <title>HTML training</title>
+</head>
+
+<body>
+
+    <!-- Headings -->
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+
+
+    <br><hr><br>
+
+
+    <!-- Paragraphs -->
+    <div>
+        <p title="This is a tooltip">Lorem <span style="color: blue;">dolor, sit</span> amet <strong>adipisicing elit.</strong> Soluta,
+            praesentium inventore. Vitae
+            possimus nihil dolorum aliquid eaque labore beatae nam, sunt suscipit laborum facere pariatur aliquam, culpa
+            sit. Eum, alias.</p>
+        <p class="background">Lorem ipsum dolor, <mark>sit amet</mark> consectetur adipisicing elit. <em>, praesentium inventore.</em>
+            Vitae possimus nihil dolorum aliquid eaque labore beatae nam, sunt suscipit laborum facere pariatur aliquam,
+            culpa sit. Eum, alias.</p>
+        <p>Lorem ipsum dolor, sit <sub>consectetur</sub> <ins> elit. Soluta</ins>, praesentium <sup>Vitae possimus</sup>
+            nihil dolorum aliquid eaque labore beatae nam, sunt suscipit laborum facere pariatur aliquam, culpa sit.
+            Eum, alias.</p>
+    </div>
+
+
+    <img src="banner.png" alt="alternate description here" width="500">
+    
+    <br>
+
+    <a href="#bookmark">bookmark</a>
+
+    
+    <br><hr><br>
+
+
+<!-- List Examples -->
+    <ol type="1" start="25">
+        <li>List Item 1</li>
+        <ul>
+            <li>Sub Bullets 1</li>
+            <li>Sub Bullets 2</li>
+        </ul>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ol>
+
+
+    <br><hr><br>
+
+
+<!-- Table Examples -->
+    <table>
+        <caption>This is a caption</caption>
+        <thead>
+            <th>First Name</th>
+            <th> Second Name</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Alexey</td>
+                <td>Kovzel</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>Jill Smith</td>
+            <td>555-555-555</td>
+            <td>777-777-777</td>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Jill Smith</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>555-555-555</td>
+        </tr>
+        <tr>
+            <td>777-777-777</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+<!-- Form Example -->
+    <form action="server.php">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First Name:<br>
+            <input type="text" name="full name" placeholder="name" value=""><br>
+            <input type="radio" name="options"> Option 1
+            <input type="radio" name="options"> Option 2 <br>
+            <input type="checkbox" name="checkboxes" checked> Checkbox 1
+            <input type="checkbox" name="checkboxes" checked> Checkbox 2
+            <input type="checkbox" name="checkboxes" checked> Checkbox 3 <br><br>
+            <label for="varSelect">Select:</label>
+            <select name="cars" id="carSelect">
+                <option value="BMW">BMW</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Audi">Audi</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+
+    <p id="bookmark">bookmark</p>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,53 @@
+@import "./header";
+@import "./footer";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+.textImage {
+    width: 1100px;
+    padding: 100px 50px;
+    text-align: justify;
+    margin: auto;
+    overflow: hidden;
+}
+@mixin sidebar {
+    width: 800px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.sidebarLeft {
+    @include sidebar();
+    float: left;
+    padding-right: 200px;
+}
+.sidebarRight {
+    @include sidebar();
+    float: right;
+    padding-left: 200px;
+}
+
+@media (max-width: 1200px) {
+    .textImage {
+        width: 80%;
+        padding: 50px 0;
+        img {
+            width: 200px;
+            display: block;
+            margin: auto;
+        }
+    }
+    .sidebarLeft,
+    .sidebarRight {
+        float: none;
+        width: auto;
+        padding: 0 20px 100px 20px;
+    }
+}
